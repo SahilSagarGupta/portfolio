@@ -60,7 +60,7 @@ const Loader = () => {
           </motion.p>
 
           {/* Progress bar */}
-          <div className="w-48 h-[2px] bg-gray-800 rounded-full overflow-hidden">
+          <div className="w-48 h-2px bg-gray-800 rounded-full overflow-hidden">
             <motion.div
               className="h-full bg-purple-500 rounded-full"
               initial={{ width: '0%' }}
