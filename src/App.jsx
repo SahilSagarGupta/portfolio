@@ -14,7 +14,7 @@ function App() {
       <Loader />
       <Navbar />
       <main>
-        <Hero />
+        <Hero /> 
         <About />
         <Skills />
         <Projects />
