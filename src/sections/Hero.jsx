@@ -53,7 +53,7 @@ const Hero = () => {
       />
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent to-white dark:to-gray-950" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent to-white dark:to-gray-900" />
 
       {/* Main Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">

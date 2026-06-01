@@ -7,12 +7,12 @@ const letters = name.split("")
 const Loader = () => {
   const [isVisible, setIsVisible] = useState(true)
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(false)
-    }, 3200)
-    return () => clearTimeout(timer)
-  }, [])
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setIsVisible(false)
+  }, 3200)
+  return () => clearTimeout(timer)
+}, [])
 
   return (
     <AnimatePresence>
