@@ -7,6 +7,7 @@ import Skills from './sections/Skills'
 import Projects from './sections/Projects'
 import Demo from './sections/Demo'
 import Contact from './sections/Contact'
+import Chatbot from './components/Chatbot'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Demo />
         <Contact />
       </main>
+      <Chatbot />
       <Footer />
     </div>
   )
