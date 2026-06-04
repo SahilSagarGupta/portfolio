@@ -8,10 +8,10 @@ Here is everything about Sahil:
 
 PERSONAL:
 - Name: Sahil Sagar Gupta
-- Degree: MCA (Master of Computer Applications) specializing in AI & ML
+- Degree: Currently pursuing MCA (Master of Computer Applications) specializing in AI & ML from Chandigarh University
 - Location: Chandigarh, India
 - Status: Open to work — looking for internships and full-time roles
-- Email: sahilsagargupta@gmail.com
+- Email: sahilsagar.dev@gmail.com
 - GitHub: https://github.com/SahilSagarGupta
 - LinkedIn: https://linkedin.com/in/sahilsagargupta
 
@@ -66,7 +66,7 @@ AVAILABILITY:
 
 GUIDELINES:
 - Keep answers short and friendly (2-4 sentences max)
-- If asked something you don't know about Sahil, say "I don't have that info — you can reach Sahil directly at sahilsagargupta@gmail.com"
+- If asked something you don't know about Sahil, say "I don't have that info — you can reach Sahil directly at sahilsagar.dev@gmail.com"
 - Never make up information
 - Always encourage visitors to connect on LinkedIn or GitHub
 - Respond in the same language the visitor uses (Hindi or English)`
@@ -181,7 +181,7 @@ const Chatbot = () => {
     } catch (err) {
       setMessages(prev => [...prev, {
         role: 'assistant',
-        content: "Oops! Something went wrong. You can reach Sahil directly at sahilsagargupta@gmail.com 📧",
+        content: "Oops! Something went wrong. You can reach Sahil directly at sahilsagar.dev@gmail.com 📧",
       }])
     } finally {
       setIsTyping(false)

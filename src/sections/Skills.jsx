@@ -247,7 +247,7 @@ const Skills = () => {
           </div>
 
           {/* Legend */}
-          <div className="mt-8 flex flex-wrap justify-center gap-8">
+          <div className="mt-6 flex flex-wrap justify-center gap-8">
             {Object.entries(PROFICIENCY).map(([key, val]) => (
               <div key={key} className="flex items-center gap-2">
                 <div className="w-3 h-3 rounded-full" style={{ backgroundColor: val.color }} />

@@ -5,7 +5,7 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Skills from './sections/Skills'
 import Projects from './sections/Projects'
-import Demo from './sections/Demo'
+// import Demo from './sections/Demo'
 import Contact from './sections/Contact'
 import Chatbot from './components/Chatbot'
 
@@ -19,7 +19,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
-        <Demo />
+        {/* <Demo /> */}
         <Contact />
       </main>
       <Chatbot />
