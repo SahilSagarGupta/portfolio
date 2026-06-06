@@ -34,7 +34,7 @@ const projects = [
       'AI-powered tool that generates professional emails from user prompts in seconds with structured formatting and personalized content.',
     tech: ['React', 'JavaScript', 'Python', 'FastAPI', 'LLM API'],
     features: ['AI-generated email drafting', 'Prompt-based customization', 'Professional formatting'],
-    github: 'https://github.com/SahilSagarGupta',
+    github: 'https://github.com/SahilSagarGupta/AI-Email-Generator.git',
     gradient: 'from-blue-600 to-cyan-600',
     glowColor: 'shadow-blue-500/20',
   },
@@ -46,7 +46,7 @@ const projects = [
       'Predictive ML model that analyzes wine characteristics and estimates quality ratings using feature engineering and classification techniques.',
     tech: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib', 'Seaborn'],
     features: ['Exploratory Data Analysis', 'Feature correlation analysis', 'Quality prediction model'],
-    github: 'https://github.com/SahilSagarGupta/Wine-Quality-Prediction',
+    github: 'https://github.com/SahilSagarGupta/Wine-Quality-Prediction.git',
     gradient: 'from-rose-600 to-pink-600',
     glowColor: 'shadow-rose-500/20',
   },
@@ -58,7 +58,7 @@ const projects = [
       'Interactive platform demonstrating how pathfinding algorithms discover optimal routes through dynamic grid environments in real-time.',
     tech: ['React', 'JavaScript', 'HTML', 'CSS', 'Dijkstra Algorithm','Tkinter'],
     features: ['Real-time visualization', 'Interactive obstacle creation', 'Algorithm demonstrations'],
-    github: 'https://github.com/SahilSagarGupta/Pathfinding-Visualizer',
+    github: 'https://github.com/SahilSagarGupta/Pathfinding-Visualizer.git',
     gradient: 'from-green-600 to-emerald-600',
     glowColor: 'shadow-green-500/20',
   },
@@ -70,7 +70,7 @@ const projects = [
       'Productivity-focused app that helps users organize, manage, and track tasks through a clean and intuitive interface.',
     tech: ['React', 'JavaScript', 'CSS', 'Local Storage'],
     features: ['Task creation & management', 'Progress tracking', 'Responsive UI'],
-    github: 'https://github.com/SahilSagarGupta',
+    github: 'https://github.com/SahilSagarGupta/Task-Forge.git',
     gradient: 'from-orange-600 to-amber-600',
     glowColor: 'shadow-orange-500/20',
   },
@@ -82,7 +82,7 @@ const projects = [
       'Data analytics project exploring pizza sales data to uncover revenue trends, customer behavior, and actionable business insights using SQL.',
     tech: ['MySQL', 'SQL', 'Data Analysis'],
     features: ['Revenue analysis', 'Sales trend identification', 'Advanced SQL querying'],
-    github: 'https://github.com/SahilSagarGupta/Pizza-Sales-Data-Analysis-using-MySQL',
+    github: 'https://github.com/SahilSagarGupta/Pizza-Sales-Data-Analysis-using-MySQL.git',
     gradient: 'from-red-600 to-orange-600',
     glowColor: 'shadow-red-500/20',
   },
@@ -94,7 +94,7 @@ const projects = [
       'Web-based quiz app that lets users test knowledge, receive instant feedback, and track performance through an engaging interface.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     features: ['Dynamic quiz experience', 'Automated scoring', 'Instant results'],
-    github: 'https://github.com/SahilSagarGupta',
+    github: 'https://github.com/SahilSagarGupta/Quiz-Application-.git',
     gradient: 'from-teal-600 to-cyan-600',
     glowColor: 'shadow-teal-500/20',
   },
@@ -195,7 +195,7 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Heading */}
-        <ScrollReveal>
+        <ScrollReveal delay={0}>
         <div className="text-center mb-16">
           <p className="text-purple-500 text-sm font-medium tracking-widest uppercase mb-3">
             What I've built

@@ -4,8 +4,8 @@ import { useRef } from 'react'
 const ScrollReveal = ({ children, delay = 0, direction = 'up' }) => {
   const ref = useRef(null)
   const isInView = useInView(ref, {
-    margin: '-100px',
-    amount: 0.2,
+    margin: '-50px',
+    amount: 0.1,
   })
 
   const variants = {
