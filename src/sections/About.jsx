@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTheme } from '../context/ThemeContext'
 import ScrollReveal from '../components/ScrollReveal' 
+import sahilImg from '../assets/images/sahil.jpg'
 
 const stats = [
   { number: '20+', label: 'GitHub Repos' },
@@ -137,7 +138,7 @@ const About = () => {
                 <div className="w-40 h-40 rounded-full bg-gradient-to-br from-purple-500 to-violet-600 p-1 shadow-xl shadow-purple-500/30">
                   <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
                     <img
-                      src="/src/assets/sahil.jpg"
+                      src={sahilImg}
                       alt="Sahil Sagar Gupta"
                       className="w-full h-full object-cover"
                     />
