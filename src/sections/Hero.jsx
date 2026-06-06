@@ -56,7 +56,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent to-white dark:to-gray-900" />
 
       {/* Main Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-35 mb-45">
 
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-950/50 mb-8">
@@ -133,8 +133,8 @@ const Hero = () => {
         </div>
 
         {/* Scroll indicator */}
-        <div className="flex flex-col items-center gap-2 text-gray-400 dark:text-gray-600 animate-bounce">
-          <span className="text-xs tracking-widest uppercase">Scroll</span>
+        <div className=" flex flex-col items-center gap-2 text-gray-400 dark:text-gray-600 animate-bounce">
+          <span className="text-xs tracking-widest uppercase mt-7">Scroll</span>
           <HiArrowDown size={16} />
         </div>
 

@@ -199,7 +199,7 @@ const Chatbot = () => {
     <>
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 w-80 sm:w-96 flex flex-col rounded-2xl overflow-hidden shadow-2xl shadow-black/30 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
+        <div className="fixed bottom-24 right-6 z-30 w-80 sm:w-96 flex flex-col rounded-2xl overflow-hidden shadow-2xl shadow-black/30 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
 
           {/* Header */}
           <div className="flex items-center justify-between px-4 py-3 bg-purple-600 flex-shrink-0">
@@ -269,7 +269,7 @@ const Chatbot = () => {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-purple-600 hover:bg-purple-700 shadow-lg shadow-purple-500/30 flex items-center justify-center transition-all duration-200 hover:scale-110"
+        className="fixed bottom-6 right-6 z-30 w-14 h-14 rounded-full bg-purple-600 hover:bg-purple-700 shadow-lg shadow-purple-500/30 flex items-center justify-center transition-all duration-200 hover:scale-110"
       >
         {isOpen
           ? <HiX size={22} className="text-white" />

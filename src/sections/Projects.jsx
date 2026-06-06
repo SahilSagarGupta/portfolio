@@ -2,6 +2,7 @@ import Tilt from 'react-parallax-tilt'
 import { useState, useRef, useEffect } from 'react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { HiSparkles } from 'react-icons/hi'
+import ScrollReveal from '../components/ScrollReveal'
 
 const projects = [
   {
@@ -120,6 +121,7 @@ const ProjectCard = ({ project, inView, index }) => {
       <div className={`h-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 hover:border-gray-400 dark:hover:border-gray-600 hover:shadow-xl ${project.glowColor} transition-all duration-300 flex flex-col`}>
 
         {/* Header */}
+        
         <div className="flex items-start justify-between mb-4">
           <div>
             <div className={`inline-block w-10 h-1 rounded-full bg-gradient-to-r ${project.gradient} mb-3`} />
@@ -128,11 +130,6 @@ const ProjectCard = ({ project, inView, index }) => {
               {project.subtitle}
             </p>
           </div>
-          {project.status && (
-            <span className={`text-xs px-2 py-1 rounded-full border ${project.statusBg} ${project.statusColor} font-medium whitespace-nowrap`}>
-              🚧 {project.status}
-            </span>
-          )}
         </div>
 
         {/* Description */}
@@ -171,6 +168,7 @@ const ProjectCard = ({ project, inView, index }) => {
         </a>
       </div>
     </Tilt>
+    
   )
 }
 
@@ -193,10 +191,11 @@ const Projects = () => {
   const rest = projects.slice(1)
 
   return (
-    <section id="projects" ref={sectionRef} className="py-24 bg-white dark:bg-gray-900">
+    <section id="projects" ref={sectionRef} className="pb-50 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Heading */}
+        <ScrollReveal>
         <div className="text-center mb-16">
           <p className="text-purple-500 text-sm font-medium tracking-widest uppercase mb-3">
             What I've built
@@ -204,6 +203,7 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold dark:text-white">Projects</h2>
           <div className="w-16 h-1 bg-purple-500 mx-auto mt-4 rounded-full" />
         </div>
+        </ScrollReveal>
 
         {/* Featured Project */}
         <div
@@ -211,6 +211,7 @@ const Projects = () => {
             inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
+          <ScrollReveal delay={0.1}>
           <Tilt
             tiltMaxAngleX={4}
             tiltMaxAngleY={4}
@@ -279,9 +280,11 @@ const Projects = () => {
               </div>
             </div>
           </Tilt>
+          </ScrollReveal>
         </div>
 
         {/* Rest of projects — 3 col grid */}
+          <ScrollReveal >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {rest.map((project, i) => (
             <ProjectCard
@@ -292,6 +295,7 @@ const Projects = () => {
             />
           ))}
         </div>
+          </ScrollReveal>
       </div>
     </section>
   )

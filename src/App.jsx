@@ -1,4 +1,4 @@
-// import Loader from './components/Loader'
+import Loader from './components/Loader'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Hero from './sections/Hero'
@@ -12,7 +12,7 @@ import Chatbot from './components/Chatbot'
 function App() {
   return (
     <div className="bg-white dark:bg-gray-950 transition-colors duration-300">
-      {/* <Loader /> */}
+      <Loader />
       <Navbar />
       <main>
         <Hero /> 

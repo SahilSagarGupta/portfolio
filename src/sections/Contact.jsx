@@ -2,6 +2,8 @@ import { useState, useRef, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import { HiCheckCircle, HiXCircle } from 'react-icons/hi'
+import ScrollReveal from '../components/ScrollReveal'
+
 
 const socialLinks = [
   {
@@ -83,11 +85,12 @@ const inputClass = `w-full px-4 py-3 rounded-xl
     <section
       id="contact"
       ref={sectionRef}
-      className="py-24 bg-gray-50 dark:bg-gray-900 bg-white"
+      className=" bg-gray-50 dark:bg-gray-900 bg-white"
     >
       <div className="max-w-5xl mx-auto px-6">
 
         {/* Heading */}
+        <ScrollReveal>
         <div className="text-center mb-16">
           <p className="text-purple-500 text-sm font-medium tracking-widest uppercase mb-3">
             Get in touch
@@ -100,6 +103,7 @@ const inputClass = `w-full px-4 py-3 rounded-xl
             Open to internships, collaborations, and full-time opportunities
           </p>
         </div>
+        </ScrollReveal> 
 
         <div
           className={`grid grid-cols-1 lg:grid-cols-5 gap-10 transition-all duration-700 ${
@@ -151,6 +155,7 @@ const inputClass = `w-full px-4 py-3 rounded-xl
               </div>
             </div>
           </div>
+          
 
           {/* Right — Form */}
           <div className="lg:col-span-3">

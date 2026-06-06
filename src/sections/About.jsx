@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTheme } from '../context/ThemeContext'
+import ScrollReveal from '../components/ScrollReveal' 
 
 const stats = [
   { number: '20+', label: 'GitHub Repos' },
@@ -75,11 +76,12 @@ const About = () => {
     <section
       id="about"
       ref={sectionRef}
-      className="py-24 bg-white dark:bg-gray-900"
+      className="pb-50 bg-white dark:bg-gray-900"
     >
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Section heading */}
+        <ScrollReveal>
         <div className="text-center mb-16">
           <p className="text-purple-500 text-sm font-medium tracking-widest uppercase mb-3">
             Get to know me
@@ -89,6 +91,7 @@ const About = () => {
           </h2>
           <div className="w-16 h-1 bg-purple-500 mx-auto mt-4 rounded-full" />
         </div>
+        </ScrollReveal>
 
         {/* Main content — 2 columns */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
@@ -99,6 +102,7 @@ const About = () => {
               inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
             }`}
           >
+            <ScrollReveal direction="right" delay={0.1}>
             <div className="bg-gray-950 rounded-2xl overflow-hidden shadow-2xl shadow-purple-500/10 border border-gray-800">
               {/* Terminal header */}
               <div className="flex items-center gap-2 px-4 py-3 bg-gray-900 border-b border-gray-800">
@@ -117,9 +121,11 @@ const About = () => {
                   ))}
               </div>
             </div>
+            </ScrollReveal>
           </div>
 
           {/* Right — Photo + Bio */}
+          <ScrollReveal direction="left" delay={0.2}>
           <div
             className={`transition-all duration-700 delay-200 ${
               inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
@@ -130,8 +136,11 @@ const About = () => {
               <div className="relative">
                 <div className="w-40 h-40 rounded-full bg-gradient-to-br from-purple-500 to-violet-600 p-1 shadow-xl shadow-purple-500/30">
                   <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
-                    {/* Replace src with your actual photo later */}
-                    <span className="text-5xl">👨‍💻</span>
+                    <img
+                      src="/src/assets/sahil.jpg"
+                      alt="Sahil Sagar Gupta"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 {/* Glow ring */}
@@ -148,16 +157,18 @@ const About = () => {
                 I'm an MCA student specializing in <span className="text-purple-500 font-medium">Artificial Intelligence & Machine Learning</span> from Chandigarh, India. I love building things that sit at the intersection of AI and the web.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                From training ML models to building full-stack web apps — I enjoy the entire spectrum. Currently exploring deep learning, React ecosystems, and everything in between.
+                From training ML models to building full-stack web apps, I enjoy the entire spectrum. Currently exploring deep learning, React ecosystems, and everything in between.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 When I'm not coding, I'm probably thinking about my next project idea. 🚀
               </p>
             </div>
           </div>
+          </ScrollReveal>
         </div>
 
         {/* Stats row */}
+        <ScrollReveal delay={0.1}>
         <div
           className={`grid grid-cols-2 md:grid-cols-4 gap-6 transition-all duration-700 delay-300 ${
             inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -177,7 +188,7 @@ const About = () => {
             </div>
           ))}
         </div>
-
+        </ScrollReveal>
       </div>
     </section>
   )
