@@ -1,13 +1,13 @@
-import Loader from './components/Loader'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Loader from './Components/Loader'
+import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Skills from './sections/Skills'
 import Projects from './sections/Projects'
 // import Demo from './sections/Demo'
 import Contact from './sections/Contact'
-import Chatbot from './components/Chatbot'
+import Chatbot from './Components/Chatbot'
 
 function App() {
   return (
