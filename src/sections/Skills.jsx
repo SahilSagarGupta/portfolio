@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
-import { useTheme } from '../context/ThemeContext'
-import ScrollReveal from '../components/ScrollReveal'
+import { useTheme } from '../Context/ThemeContext'
+import ScrollReveal from '../Components/ScrollReveal'
 
 const PROFICIENCY = {
   Advanced:     { color: '#16a34a', bg: '#dcfce7', label: '●●● Advanced' },

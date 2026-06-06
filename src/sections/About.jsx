@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import { useTheme } from '../context/ThemeContext'
-import ScrollReveal from '../components/ScrollReveal' 
+import { useTheme } from '../Context/ThemeContext'
+import ScrollReveal from '../Components/ScrollReveal' 
 import sahilImg from '../assets/images/sahil.jpg'
 
 const stats = [

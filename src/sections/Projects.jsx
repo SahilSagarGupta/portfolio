@@ -2,7 +2,7 @@ import Tilt from 'react-parallax-tilt'
 import { useState, useRef, useEffect } from 'react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { HiSparkles } from 'react-icons/hi'
-import ScrollReveal from '../components/ScrollReveal'
+import ScrollReveal from '../Components/ScrollReveal'
 
 const projects = [
   {

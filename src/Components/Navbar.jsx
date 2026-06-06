@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useTheme } from '../context/ThemeContext'
+import { useTheme } from '../Context/ThemeContext'
 import { HiSun, HiMoon, HiMenu, HiX } from 'react-icons/hi'
 
 const navLinks = [

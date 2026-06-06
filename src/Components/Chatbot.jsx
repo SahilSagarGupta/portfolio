@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { useTheme } from '../context/ThemeContext'
+import { useTheme } from '../Context/ThemeContext'
 import { HiX, HiPaperAirplane, HiSparkles } from 'react-icons/hi'
 
 const SYSTEM_PROMPT = `You are Sahil's AI assistant on his portfolio website. You answer questions about Sahil Sagar Gupta in a friendly, concise, and professional way.

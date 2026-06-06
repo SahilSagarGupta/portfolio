@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import { HiCheckCircle, HiXCircle } from 'react-icons/hi'
-import ScrollReveal from '../components/ScrollReveal'
+import ScrollReveal from '../Components/ScrollReveal'
 
 
 const socialLinks = [

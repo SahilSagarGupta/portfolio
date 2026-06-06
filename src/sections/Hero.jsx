@@ -2,7 +2,7 @@ import { useCallback } from 'react'
 import Particles from 'react-tsparticles'
 import { loadSlim } from 'tsparticles-slim'
 import Typewriter from 'typewriter-effect'
-import { useTheme } from '../context/ThemeContext'
+import { useTheme } from '../Context/ThemeContext'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiArrowDown } from 'react-icons/hi'
 
